@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CDN CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>MSchedulePro</title>
+  </head>
+  <body>
+    <header id="home">
+      <!-- Navbar starts -->
+      <nav>
+        <div class="container">
+          <div class="logo">
+            <a href="#home"> MScheduler Pro </a>
+          </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar ends -->
+    </header>
+    <main>
+      <!-- Slider section starts -->
+
+      <section id="slider">
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-light slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="images/image (1).jpeg"
+                class="d-block w-100"
+                alt="sliderImg"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Schedule unlimited Appointments</h3>
+                <p>
+                  With MSchedule Pro you can set any number of appointments as
+                  you want.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="images/image (2).jpg"
+                class="d-block w-100"
+                alt="sliderImg"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Schedule Events Like A Pro</h3>
+                <p>Schedule your events with full control.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/image (3).jpg"
+                class="d-block w-100"
+                alt="sliderImg"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Get 24/7 online support</h3>
+                <p>We are ready to support you anytime from anywhere.</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- Slider section ends -->
+      <!-- Features section starts -->
+      <section id="features">
+        <h1>Features</h1>
+        <hr class="dotted-hr" />
+        <article id="calender">
+          <img src="images/calender.jpg" alt="calendar" />
+          <div class="article-text">
+            <h3>Calender</h3>
+            <p>
+              Our scheduling app's calendar view shows users their scheduled
+              events, appointments, and meetings, helping them plan their day,
+              week, or month. Our flexible calendar interface offers various
+              viewing modes, including day, week, month, or year and can help
+              users stay organized and manage their time better.
+            </p>
+          </div>
+        </article>
+        <hr />
+        <article id="reminder">
+          <div class="article-text">
+            <h3>Reminder</h3>
+            <p>
+              With our scheduling app, users can receive timely reminders and
+              notifications for upcoming events, appointments, and meetings.
+              These notifications can be delivered via email, text, or push
+              notifications, ensuring that users never miss an important
+              engagement.
+            </p>
+          </div>
+          <img src="images/reminder.jpg" alt="reminder" />
+        </article>
+        <hr />
+        <article id="integration">
+          <img src="images/apps.jpg" alt="integration" />
+          <div class="article-text">
+            <h3>Integration</h3>
+            <p>
+              Our scheduling app is able to integrate with other apps and
+              services, including email, messaging, and video conferencing apps,
+              to make scheduling and attending meetings more convenient for
+              users.
+            </p>
+          </div>
+        </article>
+        <hr />
+        <article id="time-zone">
+          <div class="article-text">
+            <h3>Time Zone</h3>
+            <p>
+              With global businesses and remote work on the rise, a scheduling
+              app must handle time zone differences when scheduling events with
+              people in different locations. Our scheduling app automatically
+              converts scheduled meeting times to local time zones to avoid
+              scheduling conflicts.
+            </p>
+          </div>
+          <img src="images/timezone.jpg" alt="time-zone" />
+        </article>
+        <hr />
+        <article id="analytics">
+          <img src="images/analytics.jpg" alt="analytics" />
+          <div class="article-text">
+            <h3>Analytics</h3>
+            <p>
+              Our scheduling app can provide users with insights and analytics
+              on their schedule, such as time spent on different types of
+              appointments or meetings. This information can help users optimize
+              their time, be more productive, and identify areas for improvement
+              in their schedule.
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- Features section ends -->
+      <!-- Pricing section starts -->
+      <section id="pricing">
+        <h1>Packages</h1>
+        <hr class="dotted-hr" />
+        <div class="container">
+          <div class="card">
+            <h2>Free</h2>
+            <span class="h4">$0</span><small>/month</small>
+            <button class="btn btn-primary">Start Free</button>
+            <ul>
+              <li>Unlimited Appointments</li>
+              <li>iOS and Android apps</li>
+              <li>Automated event notifications</li>
+              <li>Email reminders</li>
+              <li>Integrate with other apps</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2>Standard</h2>
+            <span class="h4">$5</span><small>/month</small>
+            <button class="btn btn-primary">Start Standard</button>
+            <ul>
+              <li>Unlimited Appointments</li>
+              <li>iOS and Android apps</li>
+              <li>Automated event notifications</li>
+              <li>Email reminders</li>
+              <li>Integrate with other apps</li>
+              <li>2-way calender sync</li>
+              <li>Accessing the help center and 24/7 email support</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2>Pro</h2>
+            <span class="h4">$8</span><small>/month</small>
+            <button class="btn btn-primary">Start Pro</button>
+            <ul>
+              <li>Unlimited Appointments</li>
+              <li>iOS and Android apps</li>
+              <li>Automated event notifications</li>
+              <li>Email reminders</li>
+              <li>Integrate with other apps</li>
+              <li>2-way calender sync</li>
+              <li>Accessing the help center and 24/7 email support</li>
+              <li>Insight and analytics on the schedules</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Pricing section ends -->
+      <!-- About section starts -->
+      <section id="about">
+        <h1>About</h1>
+        <hr class="dotted-hr" />
+        <div class="about-text">
+          Welcome to MScheduler Pro, the ultimate scheduling app that takes the
+          hassle out of managing your time. With MScheduler Pro, you can easily
+          schedule and manage your appointments, meetings, and other events in
+          one centralized location.<br />
+          <br />
+          Whether you're a busy professional, a student, or a parent, MScheduler
+          Pro offers a range of features to help you manage your time more
+          effectively. Our app offers a customizable calendar view that allows
+          you to see all your scheduled events at a glance, so you never miss an
+          important meeting or appointment. With flexible calendar viewing modes
+          such as day, week, month, and year, you can easily plan your schedule
+          according to your needs.<br />
+          <br />
+          MScheduler Pro offers a range of features to help you stay organized,
+          including reminders and notifications for upcoming events,
+          appointments, and meetings. Our scheduling assistant also allows you
+          to easily schedule meetings with other people by checking their
+          availability and suggesting available times. It even automates the
+          process of sending invitations, reminders, and follow-up emails,
+          making scheduling quick and effortless. <br />
+          <br />
+          In addition, MScheduler Pro integrates with other apps and services,
+          including email, messaging, and video conferencing apps, making it
+          easier to schedule and attend meetings. It also supports time zone
+          differences when scheduling events with people in different locations,
+          ensuring you avoid scheduling conflicts. <br />
+          <br />
+          MScheduler Pro is a customizable app that allows you to personalize
+          your calendar and scheduling preferences according to your needs. You
+          can set your working hours, define appointment types, and add custom
+          labels, so your schedule reflects your personal style. <br />
+          <br />
+          Finally, MScheduler Pro provides analytics and insights on your
+          schedule, such as time spent on different types of appointments or
+          meetings. This information helps you optimize your time, be more
+          productive, and identify areas for improvement in your schedule.
+          <br />
+          <br />
+          We believe that with MScheduler Pro, you can take control of your
+          schedule and improve your productivity. Try MScheduler Pro today and
+          discover how it can revolutionize the way you manage your time. <br />
+        </div>
+      </section>
+      <!-- About section ends -->
+      <!-- Contact section starts -->
+
+      <section id="contact">
+        <h1>Contact</h1>
+        <hr class="dotted-hr" />
+        <form>
+          <div class="form-section">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="form-section">
+            <label for="topic">Topic</label>
+            <input type="text" id="topic" name="topic" />
+          </div>
+          <div class="form-section">
+            <label for="message">Your message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <div class="form-btn"><button type="submit">Submit</button></div>
+        </form>
+      </section>
+
+      <!-- Contact section ends -->
+    </main>
+    <!-- Footer starts -->
+    <footer>
+      <div class="time">
+        <h5>UTC Time:</h5>
+        <h2 id="utc-time"></h2>
+      </div>
+      <div class="visit-counter">
+        <h2>Site visits: <span id="visit-count"></span> times</h2>
+      </div>
+      <div class="download">
+        <a href="#"><img src="images/googlePlay.png" alt="googlePlay" /></a>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <div class="copyright">&copy; All rights reserved by MScheduler Pro.</div>
+    </footer>
+    <!-- Footer ends -->
+
+    <!-- Bootstrap CDN JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

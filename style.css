@@ -1,0 +1,299 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  text-decoration: none !important;
+}
+section h1 {
+  text-align: center;
+  /* margin-top: 50px; */
+  padding-top: 50px;
+}
+.dotted-hr {
+  max-width: 100px;
+  border: none;
+  border-bottom: 10px dotted black;
+  margin: 0 auto;
+  background-color: transparent;
+  color: black;
+  opacity: 1;
+  margin-bottom: 50px;
+}
+hr {
+  max-width: 80%;
+  margin: 0 auto;
+}
+/* Header section starts */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+header nav {
+  background-color: white;
+  min-height: 13vh;
+}
+header nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.logo a {
+  color: black;
+  font-size: 2rem;
+  display: inline-block;
+  font-weight: bolder;
+}
+nav ul {
+  display: flex;
+  margin-top: 20px;
+  padding-left: 0;
+  list-style-type: none;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li a {
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+nav ul li a:hover {
+  color: tomato;
+}
+/* Header section ends */
+
+/* Slider section starts */
+.carousel-item img {
+  object-fit: cover;
+  max-height: 87vh;
+}
+/* Slider section ends */
+/* Features section starts */
+article {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+article img {
+  height: 56vh;
+  max-width: auto;
+  padding: 10px;
+}
+.article-text {
+  max-width: 50%;
+  padding: 20px;
+}
+/* Features section ends */
+/* Pricing section starts */
+#pricing {
+  background-color: cadetblue;
+  padding-bottom: 50px;
+}
+#pricing h1 {
+  color: white;
+}
+#pricing .dotted-hr {
+  border-bottom-color: white;
+}
+#pricing .container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+#pricing .container .card {
+  width: 30%;
+}
+#pricing .container .card ul {
+  list-style-type: none;
+}
+#pricing .container .card ul li::before {
+  content: "✓";
+}
+.card {
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+.card h2 {
+  text-align: center;
+  font-weight: bolder;
+}
+.card ul {
+  margin-top: 20px;
+}
+.card ul li {
+  line-height: 2.4rem;
+}
+/* Pricing section ends */
+
+/* About section starts */
+
+#about {
+  padding: 50px;
+  padding-top: 0px;
+}
+
+/* About section ends */
+
+/* Contact section starts */
+#contact {
+  background-color: cadetblue;
+  color: white;
+  padding: 50px;
+  padding-top: 0;
+}
+#contact hr {
+  border-bottom-color: white;
+}
+form {
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  max-width: 40%;
+}
+.form-section {
+  margin: 10px auto;
+  display: flex;
+}
+.form-section label {
+  flex: 0.3;
+}
+.form-section input,
+textarea {
+  flex: 0.7;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin-top: 5px;
+}
+textarea {
+  resize: none;
+}
+form button {
+  border: none;
+  padding: 5px;
+  font-weight: bolder;
+  background-color: goldenrod;
+  border-radius: 5px;
+}
+.form-btn {
+  display: flex;
+  justify-content: center;
+}
+/* Contact section ends */
+
+/* Footer starts */
+footer {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.visit-counter {
+  color: goldenrod;
+  width: 50%;
+  margin: 0px auto;
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.download img {
+  width: 200px;
+  height: 80px;
+  margin: 20px;
+}
+.social-links {
+  margin: 20px;
+}
+.social-links a {
+  font-size: 1.5rem;
+  color: white;
+  margin: 20px;
+  padding: 3px;
+  height: 50px;
+  width: 50px;
+}
+
+.time {
+  padding-top: 50px;
+}
+/* Footer ends */
+
+@media screen and (max-width: 992px) {
+  /* pricing section starts */
+  #pricing .container {
+    flex-direction: column;
+  }
+  #pricing .container .card {
+    width: 60%;
+    margin: 20px auto;
+  }
+  /* pricing section ends */
+
+  /* contact section starts */
+  form {
+    max-width: 60%;
+    text-align: center;
+  }
+  /* contact section ends */
+}
+
+@media screen and (max-width: 778px) {
+  /* header section starts */
+  header {
+    position: static;
+  }
+  nav .container {
+    flex-direction: column;
+  }
+  nav .container ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav .container ul li {
+    background-color: goldenrod;
+    margin: 10px 0;
+    display: block;
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  nav .container ul li a {
+    font-weight: bold;
+    color: black;
+  }
+  /* header section ends */
+  /* features section starts */
+  article {
+    flex-direction: column;
+  }
+  /* features section ends */
+  /* pricing section starts */
+
+  #pricing .container .card {
+    width: 80%;
+  }
+  /* pricing section ends */
+  /* contact section starts */
+  form {
+    max-width: 90%;
+    text-align: center;
+  }
+  .form-section {
+    flex-direction: column;
+  }
+  /* contact section ends */
+}
